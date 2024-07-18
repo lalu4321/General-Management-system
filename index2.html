@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Management System</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+ <body>
+    <header>
+        <h1>General Management System</h1>
+        <nav>
+            <ul>
+                <li>Dashboard</li>
+                <li>Employees</li>
+                <li>Projects</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Welcome to the management system dashboard. Here are list of the employees and Projects get summited</p>
+        </section>
+        <section id="employees">
+            <h2>Employees</h2>
+            <button onclick="showEmployeeForm()">Add Employee</button>
+            <div id="employeeForm" class="form-container">
+                <h3>Add New Employee</h3>
+                <label for="employeeName">Name:</label>
+                <input type="text" id="employeeName">
+                <label for="employeePosition">Position:</label>
+                <input type="text" id="employeePosition">
+                <button onclick="addEmployee()">Add</button>
+                <button onclick="hideEmployeeForm()">Cancel</button>
+            </div>
+            <ul id="employeeList">
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <button onclick="showProjectForm()">Add Project</button>
+            <div id="projectForm" class="form-container">
+                <h3>Add New Project</h3>
+                <label for="projectName">Name:</label>
+                <input type="text" id="projectName">
+                <label for="projectDescription">Description:</label>
+                <input type="text" id="projectDescription">
+                <button onclick="addProject()">Add</button>
+                <button onclick="hideProjectForm()">Cancel</button>
+            </div>
+            <ul id="projectList">
+            </ul>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Configure your settings here.</p>
+            <script src="script2.js"></script>
+        </section>
+    </main>
+    <div class="nextpage">
+    <a href="index1.html">Sign out </a> 
+    </div>
+  </body>
+</html>
